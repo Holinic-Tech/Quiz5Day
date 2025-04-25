@@ -5,6 +5,7 @@ import '/footer/footer_button/footer_button_widget.dart';
 import '/custom_code/widgets/index.dart' as custom_widgets;
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'question_answer_additionl_info_model.dart';
 export 'question_answer_additionl_info_model.dart';
 
@@ -115,7 +116,12 @@ class _QuestionAnswerAdditionlInfoWidgetState
                       widget.question!,
                       textAlign: TextAlign.center,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Inter',
+                            font: GoogleFonts.inter(
+                              fontWeight: FontWeight.w500,
+                              fontStyle: FlutterFlowTheme.of(context)
+                                  .bodyMedium
+                                  .fontStyle,
+                            ),
                             color: FlutterFlowTheme.of(context).textRichBlack,
                             fontSize: () {
                               if (MediaQuery.sizeOf(context).width <
@@ -133,6 +139,9 @@ class _QuestionAnswerAdditionlInfoWidgetState
                             }(),
                             letterSpacing: 0.0,
                             fontWeight: FontWeight.w500,
+                            fontStyle: FlutterFlowTheme.of(context)
+                                .bodyMedium
+                                .fontStyle,
                           ),
                     ),
                   ),

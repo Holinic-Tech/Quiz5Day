@@ -140,7 +140,12 @@ class _PitchBodySimpleDetailedTextImagesWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Inter',
+                                    font: GoogleFonts.inter(
+                                      fontWeight: FontWeight.w500,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .fontStyle,
+                                    ),
                                     fontSize:
                                         MediaQuery.sizeOf(context).height <
                                                 500.0
@@ -148,6 +153,9 @@ class _PitchBodySimpleDetailedTextImagesWidgetState
                                             : 20.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w500,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .fontStyle,
                                   ),
                             ),
                           ),
@@ -166,17 +174,31 @@ class _PitchBodySimpleDetailedTextImagesWidgetState
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        fontFamily: 'Inter',
+                                        font: GoogleFonts.inter(
+                                          fontWeight: FontWeight.normal,
+                                          fontStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .bodyMedium
+                                                  .fontStyle,
+                                        ),
                                         fontSize: 16.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.normal,
+                                        fontStyle: FlutterFlowTheme.of(context)
+                                            .bodyMedium
+                                            .fontStyle,
                                       ),
                                 )
                               ],
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Inter',
+                                    font: GoogleFonts.inter(
+                                      fontWeight: FontWeight.normal,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .fontStyle,
+                                    ),
                                     fontSize:
                                         MediaQuery.sizeOf(context).height <
                                                 500.0
@@ -184,6 +206,9 @@ class _PitchBodySimpleDetailedTextImagesWidgetState
                                             : 16.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.normal,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .fontStyle,
                                     lineHeight: 1.25,
                                   ),
                             ),
@@ -205,8 +230,7 @@ class _PitchBodySimpleDetailedTextImagesWidgetState
                                     widget.claim,
                                     'claim',
                                   ),
-                                  style: GoogleFonts.getFont(
-                                    'Inter',
+                                  style: GoogleFonts.inter(
                                     fontWeight: FontWeight.w300,
                                   ),
                                 )
@@ -214,7 +238,12 @@ class _PitchBodySimpleDetailedTextImagesWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Inter',
+                                    font: GoogleFonts.inter(
+                                      fontWeight: FontWeight.normal,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .fontStyle,
+                                    ),
                                     fontSize:
                                         MediaQuery.sizeOf(context).height <
                                                 500.0
@@ -222,6 +251,9 @@ class _PitchBodySimpleDetailedTextImagesWidgetState
                                             : 16.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.normal,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .fontStyle,
                                     lineHeight: 1.25,
                                   ),
                             ),
@@ -240,8 +272,7 @@ class _PitchBodySimpleDetailedTextImagesWidgetState
                               children: [
                                 TextSpan(
                                   text: widget.conclusion!,
-                                  style: GoogleFonts.getFont(
-                                    'Inter',
+                                  style: GoogleFonts.inter(
                                     fontWeight: FontWeight.w500,
                                   ),
                                 )
@@ -249,7 +280,12 @@ class _PitchBodySimpleDetailedTextImagesWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Inter',
+                                    font: GoogleFonts.inter(
+                                      fontWeight: FontWeight.normal,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .fontStyle,
+                                    ),
                                     fontSize:
                                         MediaQuery.sizeOf(context).height <
                                                 500.0
@@ -257,6 +293,9 @@ class _PitchBodySimpleDetailedTextImagesWidgetState
                                             : 16.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.normal,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .fontStyle,
                                     lineHeight: 1.25,
                                   ),
                             ),
@@ -291,8 +330,7 @@ class _PitchBodySimpleDetailedTextImagesWidgetState
                                           widget.valueProp,
                                           'valueProp',
                                         ),
-                                        style: GoogleFonts.getFont(
-                                          'Inter',
+                                        style: GoogleFonts.inter(
                                           color: FlutterFlowTheme.of(context)
                                               .secondary,
                                           fontWeight: FontWeight.normal,
@@ -302,13 +340,30 @@ class _PitchBodySimpleDetailedTextImagesWidgetState
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily: 'Inter',
+                                          font: GoogleFonts.inter(
+                                            fontWeight:
+                                                FlutterFlowTheme.of(context)
+                                                    .bodyMedium
+                                                    .fontWeight,
+                                            fontStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .bodyMedium
+                                                    .fontStyle,
+                                          ),
                                           fontSize: MediaQuery.sizeOf(context)
                                                       .height <
                                                   500.0
                                               ? 14.0
                                               : 16.0,
                                           letterSpacing: 0.0,
+                                          fontWeight:
+                                              FlutterFlowTheme.of(context)
+                                                  .bodyMedium
+                                                  .fontWeight,
+                                          fontStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .bodyMedium
+                                                  .fontStyle,
                                           lineHeight: 1.25,
                                         ),
                                   ),

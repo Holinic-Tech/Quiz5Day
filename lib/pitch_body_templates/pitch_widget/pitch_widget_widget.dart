@@ -1,6 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'pitch_widget_model.dart';
 export 'pitch_widget_model.dart';
 
@@ -59,12 +60,16 @@ class _PitchWidgetWidgetState extends State<PitchWidgetWidget> {
         Text(
           widget.header,
           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                fontFamily: 'Inter',
+                font: GoogleFonts.inter(
+                  fontWeight: FontWeight.normal,
+                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                ),
                 color: FlutterFlowTheme.of(context).secondaryText,
                 fontSize:
                     MediaQuery.sizeOf(context).height < 500.0 ? 13.0 : 15.0,
                 letterSpacing: 0.0,
                 fontWeight: FontWeight.normal,
+                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
               ),
         ),
         Row(
@@ -84,12 +89,18 @@ class _PitchWidgetWidgetState extends State<PitchWidgetWidget> {
               child: Text(
                 widget.description!,
                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                      fontFamily: 'Inter',
+                      font: GoogleFonts.inter(
+                        fontWeight: FontWeight.w600,
+                        fontStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                      ),
                       fontSize: MediaQuery.sizeOf(context).height < 500.0
                           ? 15.0
                           : 17.0,
                       letterSpacing: 0.0,
                       fontWeight: FontWeight.w600,
+                      fontStyle:
+                          FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                     ),
               ),
             ),

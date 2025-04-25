@@ -1,6 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'dashboard_widget_model.dart';
 export 'dashboard_widget_model.dart';
 
@@ -57,20 +58,29 @@ class _DashboardWidgetWidgetState extends State<DashboardWidgetWidget> {
           child: Text(
             widget.header!,
             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                  fontFamily: 'Inter',
+                  font: GoogleFonts.inter(
+                    fontWeight: FontWeight.w600,
+                    fontStyle:
+                        FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                  ),
                   fontSize: 14.0,
                   letterSpacing: 0.0,
                   fontWeight: FontWeight.w600,
+                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                 ),
           ),
         ),
         Text(
           widget.value!,
           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                fontFamily: 'Inter',
+                font: GoogleFonts.inter(
+                  fontWeight: FontWeight.normal,
+                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                ),
                 fontSize: 13.0,
                 letterSpacing: 0.0,
                 fontWeight: FontWeight.normal,
+                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
               ),
         ),
       ],
